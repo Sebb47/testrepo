@@ -1,0 +1,55 @@
+body {
+  overflow: hidden;
+}
+
+.grid>div {
+  background: #eee;
+  padding: 1em;
+}
+
+.grid>div:nth-child(odd) {
+  background: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.box {
+  height: 120px;
+  transition: all 0.4s ease;
+}
+
+div:hover {
+  border-radius: 20px;
+}
+
+.box:hover {
+  background-color: #ba0;
+  transition: all 0.4s ease;
+  box-shadow: 6px 6px 6px 6px #0ab;
+}
+
+.grid>div:nth-child(odd):hover {
+  background-color: #0ab;
+  transition: all 0.4s ease;
+  box-shadow: 6px 6px 6px 6px #ba0;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+  }
+}
+
+@media (max-width: 460px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+}
