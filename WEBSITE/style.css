@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: rgba(3, 201, 169, 0.9);
+  --dark: rgba(46, 49, 49, 0.4);
+  --light: rgba(218, 223, 225, 0.4);
+  --lightxt: rgba(218, 223, 225, 0.9);
+}
+
+html {
+  background-image: url(neon_bg.jpg);
+  background-color: var(--primary);
+  background-blend-mode: luminosity;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 100vh;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  z-index: 0;
+}
+
+/* Nav */
+nav {
+  justify-content: space-around;
+  min-width: 100vh;
+}
+
+a {
+  text-decoration-style: none;
+  font-size: 1.2rem;
+}
+
+li {
+  list-style-type: none;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  transition: all 1.5s ease;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.navlist {
+  justify-content: center;
+  text-align: center;
+}
+
+.topnav {
+  margin-top: 30vh;
+  transition: all 2s ease;
+  min-width: 100vh;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  padding: 2rem 1rem;
+  transition: all 0.6s ease-out;
+  border-radius: 15vh;
+}
+
+#logo {
+  width: auto;
+  transition: all 1.5s ease-out;
+}
+
+/* Hover */
+.topnav:hover {
+  background-color: var(--dark);
+  transition: all 1.5s ease;
+}
+
+.topnav:hover li {
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+
+#logo:hover {
+  background-color: var(--primary);
+  border-radius: 15vh;
+  transition: all 0.6s ease-out;
+}
+
+a:hover {
+  background-color: var(--primary);
+  transition: all 0.6s ease-out;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--lightxt);
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+footer p {
+  justify-content: center;
+  text-align: center;
