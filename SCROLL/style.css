@@ -73,6 +73,11 @@
   width: 100%;
 }
 
+.navbar-btn:hover {
+  color: #fd1d1d;
+  transition: all 0.3s ease;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -92,7 +97,7 @@
 }
 
 .navbar-links:hover {
-  color: #9518fc;
+  color: #fd1d1d;
   transition: all 0.3s ease;
 }
 
