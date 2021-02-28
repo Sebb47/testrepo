@@ -71,6 +71,8 @@ li {
 #logo {
   width: auto;
   transition: all 1.5s ease-out;
+  background-color: var(--dark);
+  border-radius: 15vh;
 }
 
 /* Hover */

@@ -73,16 +73,6 @@ p, h2 {
   align-items: center;
 }
 
-.services {
-  overflow: scroll;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.aboutbox {
-  background-color: var(--dark);
-}
-
 .contact {
   overflow: scroll;
   overflow-y: hidden;
@@ -119,10 +109,30 @@ p, h2 {
   height: auto;
   max-width: 18vh;
   transition: all 1.5s ease-out;
+  background-color: var(--dark);
+  border-radius: 15vh;
 }
 
-.servicebox {
+.services {
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background-color: var(--dark);
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.about {
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: var(--dark);
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 /* Hover */
