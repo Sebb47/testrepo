@@ -12,9 +12,10 @@
   --lightxt: rgba(218, 223, 225, 1);
 }
 
+/* rgba(3, 201, 169, 0.7) */
 html {
   background-image: url(neon_bg.jpg);
-  background-color: var(--primary);
+  background-color: rgba(3, 201, 169, 0.5);
   background-blend-mode: luminosity;
   background-position: center;
   background-repeat: repeat-y;
@@ -78,7 +79,7 @@ li {
 /* Hover */
 .topnav:hover {
   background-color: var(--dark);
-  transition: all 1.5s ease;
+  transition: all 2.8s ease;
 }
 
 .topnav:hover li {
@@ -87,7 +88,8 @@ li {
 }
 
 .topnav:hover #logo {
-  background-color: rgba(3, 201, 169, 1);
+  background-color: var(--primary);
+  background-image: linear-gradient(to right, var(--dark), var(--primary));
   border-radius: 15vh;
   transition: all 0.6s ease-out;
 }
