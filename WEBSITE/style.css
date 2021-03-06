@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Krona One', sans-serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -12,7 +12,6 @@
   --lightxt: rgba(218, 223, 225, 1);
 }
 
-/* rgba(3, 201, 169, 0.7) */
 html {
   background-image: url(neon_bg.jpg);
   background-color: rgba(3, 201, 169, 0.5);
@@ -20,7 +19,7 @@ html {
   background-position: center;
   background-repeat: repeat-y;
   background-size: 100%;
-  min-width: 100vh;
+  min-width: 100vw;
   min-height: 100vh;
   scroll-behavior: smooth;
   z-index: 0;
@@ -29,10 +28,10 @@ html {
 /* Nav */
 nav {
   justify-content: space-around;
-  min-width: 100vh;
+  min-width: 100vw;
 }
 
-a {
+.navlist a {
   color: var(--lightxt);
   text-decoration: none;
   text-decoration-style: none;
@@ -40,7 +39,7 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-li {
+.navlist li {
   color: var(--lightxt);
   list-style-type: none;
   justify-content: center;
@@ -58,8 +57,51 @@ li {
 .topnav {
   margin-top: 28vh;
   transition: all 2s ease;
-  min-width: 100vh;
+  min-width: 100vw;
   position: relative;
+}
+
+/* Media List */
+.media ul {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr 6fr;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 100vw;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  transition: all 1.5s ease;
+}
+
+.media h3 {
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+  color: var(--lightxt);
+  opacity: 0;
+}
+
+.media h2 {
+  padding: 1rem 1rem 0.5rem;
+  text-align: center;
+  color: var(--lightxt);
+  opacity: 0;
+}
+
+.media a {
+  color: var(--dark);
+  text-decoration: none;
+  text-decoration-style: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.media-list li {
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  margin: 3rem 1rem;
+  padding: auto;
 }
 
 /* Logo */
@@ -77,6 +119,14 @@ li {
 }
 
 /* Hover */
+.media ul:hover {
+  background-color: var(--dark);
+  transition: all 2.8s ease;
+  border-radius: 35vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+}
+
 .topnav:hover {
   background-color: var(--dark);
   transition: all 2.8s ease;
@@ -89,12 +139,17 @@ li {
 
 .topnav:hover #logo {
   background-color: var(--primary);
-  background-image: linear-gradient(to right, var(--dark), var(--primary));
+  background-image: linear-gradient(to right, var(--light), var(--primary));
   border-radius: 15vh;
   transition: all 0.6s ease-out;
 }
 
-a:hover {
+.media-list a:hover {
+  color: var(--lightxt);
+  transition: all 0.6s ease-out;
+}
+
+.navlist a:hover {
   background-color: var(--primary);
   transition: all 0.6s ease-out;
   border-radius: 15vh;

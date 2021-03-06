@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Krona One', sans-serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -111,6 +111,10 @@ p, h2 {
   transition: all 1.5s ease-out;
   background-color: var(--dark);
   border-radius: 15vh;
+}
+
+.servicebox {
+  overflow: hidden;
 }
 
 .services {
