@@ -152,9 +152,11 @@ nav {
 }
 
 .navlist a:hover {
-  background-color: var(--primary);
+  background-color: var(--light);
   transition: all 0.6s ease-out;
   border-radius: 15vh;
+  color: var(--dark);
+  text-shadow: 3px 2px 5px var(--primary);
 }
 
 footer {

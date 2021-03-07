@@ -133,6 +133,10 @@ p, h2 {
   align-items: center;
 }
 
+.servicebox a {
+  opacity: 1;
+}
+
 .servicebox div {
   padding-top: 2rem;
   margin-left: 47.5vw;
@@ -154,6 +158,7 @@ p, h2 {
 }
 
 .aboutbox div {
+  padding-top: 1rem;
   margin-left: 47.5vw;
 }
 
@@ -172,10 +177,6 @@ p, h2 {
 }
 
 .topnav:hover a {
-  opacity: 1;
-}
-
-.servicebox a {
   opacity: 1;
 }
 
