@@ -1,8 +1,0 @@
-.hex-grid__list {
-  --amount: 5;
-  display: grid;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  grid-template-columns: repeat(var(--amount), 1fr, 2fr) 1fr;
-}
