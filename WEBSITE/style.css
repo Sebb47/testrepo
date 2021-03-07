@@ -7,6 +7,7 @@
 
 :root {
   --primary: rgba(3, 201, 169, 0.7);
+  --background: rgba(3, 201, 169, 0.4);
   --dark: rgba(46, 49, 49, 0.6);
   --light: rgba(218, 223, 225, 0.4);
   --lightxt: rgba(218, 223, 225, 1);
@@ -14,7 +15,7 @@
 
 html {
   background-image: url(neon_bg.jpg);
-  background-color: rgba(3, 201, 169, 0.5);
+  background-color: var(--background);
   background-blend-mode: luminosity;
   background-position: center;
   background-repeat: repeat-y;
@@ -37,6 +38,7 @@ nav {
   text-decoration-style: none;
   font-size: 1.5rem;
   padding: 0.5rem 1.5rem;
+  font-weight: 700;
 }
 
 .navlist li {
@@ -44,9 +46,9 @@ nav {
   list-style-type: none;
   justify-content: center;
   padding: 1rem 1rem;
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
   opacity: 0;
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
 }
 
 .navlist {
@@ -56,7 +58,7 @@ nav {
 
 .topnav {
   margin-top: 28vh;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
   min-width: 100vw;
   position: relative;
 }
@@ -70,7 +72,7 @@ nav {
   max-width: 100vw;
   margin-left: 3rem;
   margin-right: 3rem;
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
 }
 
 .media h3 {
@@ -120,16 +122,16 @@ nav {
 
 /* Hover */
 .media ul:hover {
-  background-color: var(--dark);
-  transition: all 2.8s ease;
-  border-radius: 35vw;
-  margin-left: 35vw;
-  margin-right: 35vw;
+  background-color: var(--light);
+  transition: all 1.2s ease;
+  border-radius: 23vw;
+  margin-left: 23vw;
+  margin-right: 23vw;
 }
 
 .topnav:hover {
   background-color: var(--dark);
-  transition: all 2.8s ease;
+  transition: all 1.5s ease;
 }
 
 .topnav:hover li {
@@ -145,7 +147,7 @@ nav {
 }
 
 .media-list a:hover {
-  color: var(--lightxt);
+  color: var(--primary);
   transition: all 0.6s ease-out;
 }
 

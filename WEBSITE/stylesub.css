@@ -7,6 +7,7 @@
 
 :root {
   --primary: rgba(3, 201, 169, 0.7);
+  --background: rgba(3, 201, 169, 0.4);
   --dark: rgba(46, 49, 49, 0.6);
   --light: rgba(218, 223, 225, 0.4);
   --lightxt: rgba(218, 223, 225, 1);
@@ -14,7 +15,7 @@
 
 html {
   background-image: url(neon_bg.jpg);
-  background-color: rgba(3, 201, 169, 0.5);
+  background-color: var(--background);
   background-blend-mode: luminosity;
   background-position: center;
   background-repeat: repeat-y;
@@ -45,6 +46,7 @@ a {
   font-size: 1rem;
   padding: 1rem 1.5rem;
   opacity: 0;
+  font-weight: 700;
 }
 
 li {
@@ -113,10 +115,6 @@ p, h2 {
   border-radius: 15vh;
 }
 
-.servicebox {
-  overflow: hidden;
-}
-
 .services {
   overflow: scroll;
   overflow-y: hidden;
@@ -124,8 +122,20 @@ p, h2 {
   background-color: var(--dark);
   justify-content: center;
   text-align: center justify;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.servicebox {
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+
+.servicebox div {
+  padding-top: 2rem;
+  margin-left: 47.5vw;
 }
 
 .about {
@@ -139,6 +149,22 @@ p, h2 {
   padding-bottom: 2rem;
 }
 
+.aboutbox a {
+  opacity: 1;
+}
+
+.aboutbox div {
+  margin-left: 47.5vw;
+}
+
+.contactbox a {
+  opacity: 1;
+}
+
+.contactbox div {
+  padding-top: 2rem;
+}
+
 /* Hover */
 .topnav:hover {
   background-color: var(--dark);
@@ -146,6 +172,10 @@ p, h2 {
 }
 
 .topnav:hover a {
+  opacity: 1;
+}
+
+.servicebox a {
   opacity: 1;
 }
 
